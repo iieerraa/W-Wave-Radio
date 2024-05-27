@@ -12,18 +12,33 @@
 </head>
 <body>
   <header class="header">
-    <div class="header__container container">
+    <div class="header__container container flex">
       <a class="header__logo logo" href="#"><img class="logo__black" src="img/logo_black.svg" alt="логотип W-Wave Radio"></a>
       <nav class="header__nav">
-        <ul class="header__menu menu list-reset">
-          <li class="header__menu-item"><a class="header__menu-link" href="#podcasts">Подкасты</a></li>
-          <li class="header__menu-item"><a class="header__menu-link" href="#broadcasts">Передачи</a></li>
-          <li class="header__menu-item"><a class="header__menu-link" href="#guests">Гости</a></li>
-          <li class="header__menu-item"><a class="header__menu-link" href="#playlists">Плейлисты</a></li>
-          <li class="header__menu-item"><a class="header__menu-link" href="#about_us">О&nbsp;нас</a></li>
+        <ul class="header__menu list-reset flex">
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#podcasts">Подкасты</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#broadcasts">Передачи</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#guests">Гости</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#playlists">Плейлисты</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#about_us">О&nbsp;нас</a>
+          </li>
         </ul>
       </nav>
-      <a class="header__search" href="#" aria-label="Поиск по сайту"></a>
+      <a class="header__search" href="#" aria-label="Поиск по сайту">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M21 21L16.65 16.65" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </a>
     </div>
   </header>
 
@@ -31,228 +46,451 @@
   <!-- hero -->
   <div class="hero">
     <div class="hero__container container">
-      <h1 class="hero__title">Радио <strong>W-Wave</strong></h1>
-      <p class="hero__descr">Привет, на&nbsp;связи W-Wave! Раньше мы&nbsp;были изданием, а&nbsp;теперь пробуем себя в&nbsp;разоворном жанре. Говорим о&nbsp;музыке, политике, истории, науке и&nbsp;культуре. Здесь, помимо прямого эфира&nbsp;&mdash; архив передач и&nbsp;многое другое:)</p>
-      <button class="hero__btn btn btn-reset"></button>
+      <h1 class="hero__title">Радио <em>W-Wave</em></h1>
+      <p class="hero__descr">Привет, на&nbsp;связи W-Wave! Раньше мы&nbsp;были изданием, а&nbsp;теперь пробуем себя в&nbsp;разоворном жанре. Говорим о&nbsp;музыке, политике, истории, науке и&nbsp;культуре. Здесь, помимо прямого эфира&nbsp;&mdash; архив передач и&nbsp;многое другое :)</p>
+      <button class="hero__btn btn btn-reset">Слушать эфир</button>
     </div>
   </div>
   <!-- podcasts -->
   <div class="podcasts" id="podcasts">
     <div class="podcasts__container container">
-      <h2 class="podcasts__title title">Подкасты</h2>
-      <ul class="podcasts__list list-reset">
-        <li class="podcasts__card podcast">
-          <span class="podcast__date">14&nbsp;июня</span>
-          <span class="podcast__time">15:43</span>
-          <h3 class="podcast__title">Европа. XIX век</h3>
-          <p class="podcast__autor">Дмитрий Гутенберг</p>
+      <h2 class="podcasts__title section-title">Подкасты</h2>
+      <ul class="podcasts__list list-reset flex">
+        <li class="podcasts__card podcast flex">
+          <div class="podcast__preview">
+            <picture>
+              <source srcset="img/podcast_01.png" media="(min-width: 768px)">
+              <source srcset="img/podcast_01_small.png" media="(max-width: 767px)">
+              <img src="img/podcast_01.png" alt="Европейский город">
+            </picture>
+            <span class="podcast__date">14&nbsp;июня</span>
+          </div>
+          <div class="podcast__body">
+            <span class="podcast__time">15:43</span>
+            <h3 class="podcast__title">Европа. XIX век</h3>
+            <p class="podcast__autor">Дмитрий Гутенберг</p>
+          </div>
         </li>
-        <li class="podcasts__card podcast">
-          <span class="podcast__date">14&nbsp;июня</span>
-          <span class="podcast__time">15:43</span>
-          <h3 class="podcast__title">Европа. XIX век</h3>
-          <p class="podcast__autor">Дмитрий Гутенберг</p>
+        <li class="podcasts__card podcast flex">
+          <div class="podcast__preview">
+            <picture>
+              <source srcset="img/podcast_02.png" media="(min-width: 768px)">
+              <source srcset="img/podcast_02_small.png" media="(max-width: 767px)">
+              <img src="img/podcast_02.png" alt="Европейский город">
+            </picture>
+            <span class="podcast__date">11&nbsp;июня</span>
+          </div>
+          <div class="podcast__body">
+            <span class="podcast__time">5:32</span>
+            <h3 class="podcast__title">О музыке</h3>
+            <p class="podcast__autor">Дмитрий Гутенберг</p>
+          </div>
         </li>
-        <li class="podcasts__card podcast">
-          <span class="podcast__date">14&nbsp;июня</span>
-          <span class="podcast__time">15:43</span>
-          <h3 class="podcast__title">Европа. XIX век</h3>
-          <p class="podcast__autor">Дмитрий Гутенберг</p>
+        <li class="podcasts__card podcast flex">
+          <div class="podcast__preview">
+            <picture>
+              <source srcset="img/podcast_03.png" media="(min-width: 768px)">
+              <source srcset="img/podcast_03_small.png" media="(max-width: 767px)">
+              <img src="img/podcast_03.png" alt="Европейский город">
+            </picture>
+            <span class="podcast__date">8&nbsp;июня</span>
+          </div>
+          <div class="podcast__body">
+            <span class="podcast__time">8:54</span>
+            <h3 class="podcast__title">Люди сегодня</h3>
+            <p class="podcast__autor">Анна Васильева</p>
+          </div>
         </li>
-        <li class="podcasts__card podcast">
-          <span class="podcast__date">14&nbsp;июня</span>
-          <span class="podcast__time">15:43</span>
-          <h3 class="podcast__title">Европа. XIX век</h3>
-          <p class="podcast__autor">Дмитрий Гутенберг</p>
+        <li class="podcasts__card podcast flex">
+          <div class="podcast__preview">
+            <picture>
+              <source srcset="img/podcast_04.png" media="(min-width: 768px)">
+              <source srcset="img/podcast_04_small.png" media="(max-width: 767px)">
+              <img src="img/podcast_04.png" alt="Европейский город">
+            </picture>
+            <span class="podcast__date">5&nbsp;июня</span>
+          </div>
+          <div class="podcast__body">
+            <span class="podcast__time">9:04</span>
+            <h3 class="podcast__title">Хэллоу, Африка!</h3>
+            <p class="podcast__autor">Пётр Дмитриевский</p>
+          </div>
         </li>
-        <li class="podcasts__card podcast">
-          <span class="podcast__date">14&nbsp;июня</span>
-          <span class="podcast__time">15:43</span>
-          <h3 class="podcast__title">Европа. XIX век</h3>
-          <p class="podcast__autor">Дмитрий Гутенберг</p>
+        <li class="podcasts__card podcast flex">
+          <div class="podcast__preview">
+            <picture>
+              <source srcset="img/podcast_05.png" media="(min-width: 768px)">
+              <source srcset="img/podcast_05_small.png" media="(max-width: 767px)">
+              <img src="img/podcast_05.png" alt="Европейский город">
+            </picture>
+            <span class="podcast__date">2&nbsp;июня</span>
+          </div>
+          <div class="podcast__body">
+            <span class="podcast__time">7:30</span>
+            <h3 class="podcast__title">Обо всём</h3>
+            <p class="podcast__autor">Пётр Дмитриевский</p>
+          </div>
         </li>
-        <li class="podcasts__card podcast">
-          <span class="podcast__date">14&nbsp;июня</span>
-          <span class="podcast__time">15:43</span>
-          <h3 class="podcast__title">Европа. XIX век</h3>
-          <p class="podcast__autor">Дмитрий Гутенберг</p>
+        <li class="podcasts__card podcast flex">
+          <div class="podcast__preview">
+            <picture>
+              <source srcset="img/podcast_06.png" media="(min-width: 768px)">
+              <source srcset="img/podcast_06_small.png" media="(max-width: 767px)">
+              <img src="img/podcast_06.png" alt="Европейский город">
+            </picture>
+            <span class="podcast__date">28&nbsp;мая</span>
+          </div>
+          <div class="podcast__body">
+            <span class="podcast__time">9:15</span>
+            <h3 class="podcast__title">Физика цвета</h3>
+            <p class="podcast__autor">Татьяна Флеганова</p>
+          </div>
         </li>
-        <li class="podcasts__card podcast">
-          <span class="podcast__date">14&nbsp;июня</span>
-          <span class="podcast__time">15:43</span>
-          <h3 class="podcast__title">Европа. XIX век</h3>
-          <p class="podcast__autor">Дмитрий Гутенберг</p>
+        <li class="podcasts__card podcast flex">
+          <div class="podcast__preview">
+            <picture>
+              <source srcset="img/podcast_07.png" media="(min-width: 768px)">
+              <source srcset="img/podcast_07_small.png" media="(max-width: 767px)">
+              <img src="img/podcast_07.png" alt="Европейский город">
+            </picture>
+            <span class="podcast__date">22&nbsp;мая</span>
+          </div>
+          <div class="podcast__body">
+            <span class="podcast__time">16:04</span>
+            <h3 class="podcast__title">Источник звука</h3>
+            <p class="podcast__autor">Пётр Дмитриевский</p>
+          </div>
         </li>
-        <li class="podcasts__card podcast">
-          <span class="podcast__date">14&nbsp;июня</span>
-          <span class="podcast__time">15:43</span>
-          <h3 class="podcast__title">Европа. XIX век</h3>
-          <p class="podcast__autor">Дмитрий Гутенберг</p>
+        <li class="podcasts__card podcast flex">
+          <div class="podcast__preview">
+            <picture>
+              <source srcset="img/podcast_08.png" media="(min-width: 768px)">
+              <source srcset="img/podcast_08_small.png" media="(max-width: 767px)">
+              <img src="img/podcast_08.png" alt="Европейский город">
+            </picture>
+            <span class="podcast__date">18&nbsp;мая</span>
+          </div>
+          <div class="podcast__body">
+            <span class="podcast__time">6:55</span>
+            <h3 class="podcast__title">Правила этикета</h3>
+            <p class="podcast__autor">Татьяна Флеганова</p>
+          </div>
         </li>
       </ul>
     </div>
   </div>
   <!-- broadcasts -->
   <div class="broadcasts" id="broadcasts">
-    <div class="broadcasts__container container">
-      <div class="broadcasts__info">
-        <h2 class="broadcasts__title">Передачи</h2>
-        <div class="broadcasts__archive">
-          <button class="broadcasts__btn btn btn-reset">Архив</button>
-          <p class="broadcasts__descr">В&nbsp;архив попадают все передачи, которые вы&nbsp;пропустили! Enjoy:)</p>
-        </div>
-      </div>
-      <ul class="broadcasts__list">
+    <div class="broadcasts__container container flex">
+      <h2 class="broadcasts__title section-title">Передачи</h2>
+      <ul class="broadcasts__list list-reset flex">
         <li class="broadcasts__card broadcast">
-          <h3 class="broadcast__title">О&nbsp;людях и&nbsp;книгах</h3>
-          <p class="broadcast__descr">Анонсируется отдельно</p>
-          <a class="broadcast__link" href="#">Подробнее</a>
+          <div class="broadcast__content">
+            <h3 class="broadcast__title">О&nbsp;людях и&nbsp;книгах</h3>
+            <p class="broadcast__descr">Анонсируется отдельно</p>
+            <a class="broadcast__link" href="#">Подробнее <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z" fill="#121723" />
+            </svg></a>
+          </div>
         </li>
         <li class="broadcasts__card broadcast">
-          <h3 class="broadcast__title">О&nbsp;людях и&nbsp;книгах</h3>
-          <p class="broadcast__descr">Анонсируется отдельно</p>
-          <a class="broadcast__link" href="#">Подробнее</a>
+          <div class="broadcast__content">
+            <h3 class="broadcast__title">Графомания&nbsp;td</h3>
+            <p class="broadcast__descr">По&nbsp;понедельникам в&nbsp;10:00</p>
+            <a class="broadcast__link" href="#">Подробнее <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z" fill="#121723" />
+            </svg></a>
+          </div>
         </li>
         <li class="broadcasts__card broadcast">
-          <h3 class="broadcast__title">О&nbsp;людях и&nbsp;книгах</h3>
-          <p class="broadcast__descr">Анонсируется отдельно</p>
-          <a class="broadcast__link" href="#">Подробнее</a>
+          <div class="broadcast__content">
+            <h3 class="broadcast__title">Не&nbsp;Рим, не&nbsp;Троя</h3>
+            <p class="broadcast__descr">По&nbsp;вторникам в&nbsp;12:00</p>
+            <a class="broadcast__link" href="#">Подробнее <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z" fill="#121723" />
+            </svg></a>
+          </div>
         </li>
         <li class="broadcasts__card broadcast">
-          <h3 class="broadcast__title">О&nbsp;людях и&nbsp;книгах</h3>
-          <p class="broadcast__descr">Анонсируется отдельно</p>
-          <a class="broadcast__link" href="#">Подробнее</a>
+          <div class="broadcast__content">
+            <h3 class="broadcast__title">Эрудит</h3>
+            <p class="broadcast__descr">По&nbsp;пятницам в&nbsp;17:00</p>
+            <a class="broadcast__link" href="#">Подробнее <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z" fill="#121723" />
+            </svg></a>
+          </div>
         </li>
         <li class="broadcasts__card broadcast">
-          <h3 class="broadcast__title">О&nbsp;людях и&nbsp;книгах</h3>
-          <p class="broadcast__descr">Анонсируется отдельно</p>
-          <a class="broadcast__link" href="#">Подробнее</a>
+          <div class="broadcast__content">
+            <h3 class="broadcast__title">Тонкости эпох</h3>
+            <p class="broadcast__descr">По&nbsp;субботам в&nbsp;10:00</p>
+            <a class="broadcast__link" href="#">Подробнее <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z" fill="#121723" />
+            </svg></a>
+          </div>
         </li>
         <li class="broadcasts__card broadcast">
-          <h3 class="broadcast__title">О&nbsp;людях и&nbsp;книгах</h3>
-          <p class="broadcast__descr">Анонсируется отдельно</p>
-          <a class="broadcast__link" href="#">Подробнее</a>
+          <div class="broadcast__content">
+            <h3 class="broadcast__title">Живые мысли</h3>
+            <p class="broadcast__descr">По&nbsp;воскресеньям в&nbsp;15:30</p>
+            <a class="broadcast__link" href="#">Подробнее <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z" fill="#121723" />
+            </svg></a>
+          </div>
         </li>
       </ul>
+      <div class="broadcasts__archive">
+        <button class="broadcasts__btn btn btn-reset">Архив</button>
+        <p class="broadcasts__descr">В&nbsp;архив попадают все передачи, которые вы&nbsp;пропустили! Enjoy :)</p>
+      </div>
     </div>
   </div>
   <!-- guests -->
   <div class="guests" id="guests">
     <div class="guests__container container">
-      <h2 class="guests__title">Гости</h2>
+      <h2 class="guests__title section-title">Гости</h2>
       <span class="guests__subtitle">У&nbsp;нас бывают:</span>
       <p class="guests__descr">Блогеры, арт-критики и&nbsp;деятели искусства, музыканты, молодые учёные и&nbsp;люди науки, историки, филологи и&nbsp;много других интересных гостей!</p>
-      <ul class="guests__list">
-        <li class="guests__card guest">
-          <h3 class="guest__name">Ольга Мартынова</h3>
-          <p class="guest__info">Российский искусствовед, арт-критик, куратор выставок, дизайнер, кандидат культурологии. Арт-критик газеты &laquo;Коммерсантъ&raquo;. Ведёт активную блогерскую деятельность как куратор музея &laquo;Гараж&raquo;, коим является с&nbsp;2016&nbsp;года.</p>
-          <button class="guest__broadcast">Эфиры с&nbsp;гостем</button>
+      <ul class="guests__list list-reset flex">
+        <li class="guests__card guest flex">
+          <picture>
+            <source srcset="img/guest_01.png" media="(min-width: 768px)">
+            <source srcset="img/guest_01_small.png" media="(max-width: 767px)">
+            <img class="guest__photo" src="img/guest_01.png" alt="Ольга Мартынова">
+          </picture>
+          <div class="guest__info">
+            <h3 class="guest__name">Ольга Мартынова</h3>
+            <p class="guest__descr">Российский искусствовед, арт-критик, куратор выставок, дизайнер, кандидат культурологии. Арт-критик газеты &laquo;Коммерсантъ&raquo;. Ведёт активную блогерскую деятельность как куратор музея &laquo;Гараж&raquo;, коим является с&nbsp;2016&nbsp;года.</p>
+            <button class="guest__broadcast btn-reset btn">Эфиры с&nbsp;гостем</button>
+          </div>
         </li>
-        <li class="guests__card guest">
-          <h3 class="guest__name">Ольга Мартынова</h3>
-          <p class="guest__info">Российский искусствовед, арт-критик, куратор выставок, дизайнер, кандидат культурологии. Арт-критик газеты &laquo;Коммерсантъ&raquo;. Ведёт активную блогерскую деятельность как куратор музея &laquo;Гараж&raquo;, коим является с&nbsp;2016&nbsp;года.</p>
-          <button class="guest__broadcast">Эфиры с&nbsp;гостем</button>
+        <li class="guests__card guest flex">
+          <picture>
+            <source srcset="img/guest_02.png" media="(min-width: 768px)">
+            <source srcset="img/guest_02_small.png" media="(max-width: 767px)">
+            <img class="guest__photo" src="img/guest_02.png" alt="Ольга Мартынова">
+          </picture>
+          <div class="guest__info">
+            <h3 class="guest__name">Денис Гришин</h3>
+            <p class="guest__descr">Однозначно, элементы политического процесса являются только методом политического участия и&nbsp;смешаны с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершённой неузнаваемости, из-за чего возрастает их&nbsp;статус бесполезности.</p>
+            <button class="guest__broadcast btn-reset btn">Эфиры с&nbsp;гостем</button>
+          </div>
         </li>
-        <li class="guests__card guest">
-          <h3 class="guest__name">Ольга Мартынова</h3>
-          <p class="guest__info">Российский искусствовед, арт-критик, куратор выставок, дизайнер, кандидат культурологии. Арт-критик газеты &laquo;Коммерсантъ&raquo;. Ведёт активную блогерскую деятельность как куратор музея &laquo;Гараж&raquo;, коим является с&nbsp;2016&nbsp;года.</p>
-          <button class="guest__broadcast">Эфиры с&nbsp;гостем</button>
+        <li class="guests__card guest flex">
+          <picture>
+            <source srcset="img/guest_03.png" media="(min-width: 768px)">
+            <source srcset="img/guest_03_small.png" media="(max-width: 767px)">
+            <img class="guest__photo" src="img/guest_03.png" alt="Ольга Мартынова">
+          </picture>
+          <div class="guest__info">
+            <h3 class="guest__name">Ольга Мартынова</h3>
+            <p class="guest__descr">С&nbsp;другой стороны, высококачественный прототип будущего проекта выявляет срочную потребность дальнейших направлений развития. В&nbsp;рамках спецификации современных стандартов, реплицированные с&nbsp;зарубежных источников.</p>
+            <button class="guest__broadcast btn-reset btn">Эфиры с&nbsp;гостем</button>
+          </div>
         </li>
       </ul>
     </div>
   </div>
   <!-- playlists -->
   <div class="playlists" id="playlists">
-    <div class="playlists__container">
+    <div class="playlists__container container flex">
       <div class="playlists__info">
-        <h2 class="playlists__title title">Плейлисты</h2>
+        <h2 class="playlists__title section-title">Плейлисты</h2>
         <p class="playlists__descr">Раздел &laquo;Плейлисты&raquo; может содержать информацию, не&nbsp;предназначенную для несовершеннолетних</p>
-        <span class="playlists__copyright">&copy;&nbsp;2021&nbsp;| W-Wave</span>
-        <div class="playlists__age-rat"></div>
+        <p class="playlists__copyright">&copy;&nbsp;2021&nbsp;| W-Wave</p>
+        <img class="playlists__age-rat" src="img/age_rating.svg" alt="">
       </div>
-      <ul class="playlists__list">
+      <ul class="playlists__list list-reset flex">
         <li class="playlists__card performer">
           <a href="#" class="performer__link">
-            <img class="performer__country" src="img/country_ru.svg" alt="Россия">
-            <h3 class="performer__name">Ploho</h3>
-            <p class="performer__records">3&nbsp;последних альбома</p>
+            <div class="performer__img">
+              <picture>
+                <source srcset="img/performer_01.png" media="(min-width: 768px)">
+                <source srcset="img/performer_01_small.png" media="(max-width: 767px)">
+                <img class="performer__photo" src="img/performer_01.png" alt="Ольга Мартынова">
+              </picture>
+              <img class="performer__country" src="img/country_ru.svg" alt="Россия">
+            </div>
+            <div class="performer__info">
+              <h3 class="performer__name">Ploho</h3>
+              <p class="performer__records">3&nbsp;последних альбома</p>
+            </div>
           </a>
         </li>
         <li class="playlists__card performer">
           <a href="#" class="performer__link">
-            <img class="performer__country" src="img/country_ru.svg" alt="Россия">
-            <h3 class="performer__name">Ploho</h3>
-            <p class="performer__records">3&nbsp;последних альбома</p>
+            <div class="performer__img">
+              <picture>
+                <source srcset="img/performer_02.png" media="(min-width: 768px)">
+                <source srcset="img/performer_02_small.png" media="(max-width: 767px)">
+                <img class="performer__photo" src="img/performer_02.png" alt="Ольга Мартынова">
+              </picture>
+              <img class="performer__country" src="img/country_ru.svg" alt="Россия">
+            </div>
+            <div class="performer__info">
+              <h3 class="performer__name">Molchat Doma</h3>
+              <p class="performer__records">Все песни</p>
+            </div>
           </a>
         </li>
         <li class="playlists__card performer">
           <a href="#" class="performer__link">
-            <img class="performer__country" src="img/country_ru.svg" alt="Россия">
-            <h3 class="performer__name">Ploho</h3>
-            <p class="performer__records">3&nbsp;последних альбома</p>
+            <div class="performer__img">
+              <picture>
+                <source srcset="img/performer_03.png" media="(min-width: 768px)">
+                <source srcset="img/performer_03_small.png" media="(max-width: 767px)">
+                <img class="performer__photo" src="img/performer_03.png" alt="Ольга Мартынова">
+              </picture>
+              <img class="performer__country" src="img/country_ru.svg" alt="Россия">
+            </div>
+            <div class="performer__info">
+              <h3 class="performer__name">Motorama</h3>
+              <p class="performer__records">Все синглы</p>
+            </div>
           </a>
         </li>
         <li class="playlists__card performer">
           <a href="#" class="performer__link">
-            <img class="performer__country" src="img/country_ru.svg" alt="Россия">
-            <h3 class="performer__name">Ploho</h3>
-            <p class="performer__records">3&nbsp;последних альбома</p>
+            <div class="performer__img">
+              <picture>
+                <source srcset="img/performer_04.png" media="(min-width: 768px)">
+                <source srcset="img/performer_04_small.png" media="(max-width: 767px)">
+                <img class="performer__photo" src="img/performer_04.png" alt="Ольга Мартынова">
+              </picture>
+              <img class="performer__country" src="img/country_ru.svg" alt="Россия">
+            </div>
+            <div class="performer__info">
+              <h3 class="performer__name">Human Tetris</h3>
+              <p class="performer__records">3&nbsp;последних альбома</p>
+            </div>
           </a>
         </li>
         <li class="playlists__card performer">
           <a href="#" class="performer__link">
-            <img class="performer__country" src="img/country_ru.svg" alt="Россия">
-            <h3 class="performer__name">Ploho</h3>
-            <p class="performer__records">3&nbsp;последних альбома</p>
+            <div class="performer__img">
+              <picture>
+                <source srcset="img/performer_05.png" media="(min-width: 768px)">
+                <source srcset="img/performer_05_small.png" media="(max-width: 767px)">
+                <img class="performer__photo" src="img/performer_05.png" alt="Ольга Мартынова">
+              </picture>
+              <img class="performer__country" src="img/country_ru.svg" alt="Россия">
+            </div>
+            <div class="performer__info">
+              <h3 class="performer__name">Буерак</h3>
+              <p class="performer__records">Все EP</p>
+            </div>
           </a>
         </li>
         <li class="playlists__card performer">
           <a href="#" class="performer__link">
-            <img class="performer__country" src="img/country_ru.svg" alt="Россия">
-            <h3 class="performer__name">Ploho</h3>
-            <p class="performer__records">3&nbsp;последних альбома</p>
+            <div class="performer__img">
+              <picture>
+                <source srcset="img/performer_06.png" media="(min-width: 768px)">
+                <source srcset="img/performer_06_small.png" media="(max-width: 767px)">
+                <img class="performer__photo" src="img/performer_06.png" alt="Ольга Мартынова">
+              </picture>
+              <img class="performer__country" src="img/country_ru.svg" alt="Россия">
+            </div>
+            <div class="performer__info">
+              <h3 class="performer__name">Июльские Дни</h3>
+              <p class="performer__records">Альбом «Колокол»</p>
+            </div>
           </a>
         </li>
         <li class="playlists__card performer">
           <a href="#" class="performer__link">
-            <img class="performer__country" src="img/country_ru.svg" alt="Россия">
-            <h3 class="performer__name">Ploho</h3>
-            <p class="performer__records">3&nbsp;последних альбома</p>
+            <div class="performer__img">
+              <picture>
+                <source srcset="img/performer_07.png" media="(min-width: 768px)">
+                <source srcset="img/performer_07_small.png" media="(max-width: 767px)">
+                <img class="performer__photo" src="img/performer_07.png" alt="Ольга Мартынова">
+              </picture>
+              <img class="performer__country" src="img/country_en.svg" alt="Россия">
+            </div>
+            <div class="performer__info">
+              <h3 class="performer__name">Joy Division</h3>
+              <p class="performer__records">Лучшее за всё время</p>
+            </div>
           </a>
         </li>
         <li class="playlists__card performer">
           <a href="#" class="performer__link">
-            <img class="performer__country" src="img/country_ru.svg" alt="Россия">
-            <h3 class="performer__name">Ploho</h3>
-            <p class="performer__records">3&nbsp;последних альбома</p>
+            <div class="performer__img">
+              <picture>
+                <source srcset="img/performer_08.png" media="(min-width: 768px)">
+                <source srcset="img/performer_08_small.png" media="(max-width: 767px)">
+                <img class="performer__photo" src="img/performer_08.png" alt="Ольга Мартынова">
+              </picture>
+              <img class="performer__country" src="img/country_en.svg" alt="Россия">
+            </div>
+            <div class="performer__info">
+              <h3 class="performer__name">The Cure</h3>
+              <p class="performer__records">Лучшее за всё время</p>
+            </div>
           </a>
         </li>
         <li class="playlists__card performer">
           <a href="#" class="performer__link">
-            <img class="performer__country" src="img/country_ru.svg" alt="Россия">
-            <h3 class="performer__name">Ploho</h3>
-            <p class="performer__records">3&nbsp;последних альбома</p>
+            <div class="performer__img">
+              <picture>
+                <source srcset="img/performer_09.png" media="(min-width: 768px)">
+                <source srcset="img/performer_09_small.png" media="(max-width: 767px)">
+                <img class="performer__photo" src="img/performer_09.png" alt="Ольга Мартынова">
+              </picture>
+              <img class="performer__country" src="img/country_en.svg" alt="Россия">
+            </div>
+            <div class="performer__info">
+              <h3 class="performer__name">The Smiths</h3>
+              <p class="performer__records">Период 1984–1988</p>
+            </div>
           </a>
         </li>
         <li class="playlists__card performer">
           <a href="#" class="performer__link">
-            <img class="performer__country" src="img/country_ru.svg" alt="Россия">
-            <h3 class="performer__name">Ploho</h3>
-            <p class="performer__records">3&nbsp;последних альбома</p>
+            <div class="performer__img">
+              <picture>
+                <source srcset="img/performer_10.png" media="(min-width: 768px)">
+                <source srcset="img/performer_10_small.png" media="(max-width: 767px)">
+                <img class="performer__photo" src="img/performer_10.png" alt="Ольга Мартынова">
+              </picture>
+              <img class="performer__country" src="img/country_en.svg" alt="Россия">
+            </div>
+            <div class="performer__info">
+              <h3 class="performer__name">New Order</h3>
+              <p class="performer__records">Хиты</p>
+            </div>
           </a>
         </li>
         <li class="playlists__card performer">
           <a href="#" class="performer__link">
-            <img class="performer__country" src="img/country_ru.svg" alt="Россия">
-            <h3 class="performer__name">Ploho</h3>
-            <p class="performer__records">3&nbsp;последних альбома</p>
+            <div class="performer__img">
+              <picture>
+                <source srcset="img/performer_11.png" media="(min-width: 768px)">
+                <source srcset="img/performer_11_small.png" media="(max-width: 767px)">
+                <img class="performer__photo" src="img/performer_11.png" alt="Ольга Мартынова">
+              </picture>
+              <img class="performer__country" src="img/country_en.svg" alt="Россия">
+            </div>
+            <div class="performer__info">
+              <h3 class="performer__name">Bauhaus</h3>
+              <p class="performer__records">Все синглы</p>
+            </div>
           </a>
         </li>
         <li class="playlists__card performer">
           <a href="#" class="performer__link">
-            <img class="performer__country" src="img/country_ru.svg" alt="Россия">
-            <h3 class="performer__name">Ploho</h3>
-            <p class="performer__records">3&nbsp;последних альбома</p>
+            <div class="performer__img">
+              <picture>
+                <source srcset="img/performer_12.png" media="(min-width: 768px)">
+                <source srcset="img/performer_12_small.png" media="(max-width: 767px)">
+                <img class="performer__photo" src="img/performer_12.png" alt="Ольга Мартынова">
+              </picture>
+              <img class="performer__country" src="img/country_en.svg" alt="Россия">
+            </div>
+            <div class="performer__info">
+              <h3 class="performer__name">Gang Of Four</h3>
+              <p class="performer__records">3 последних альбома</p>
+            </div>
           </a>
         </li>
       </ul>
@@ -261,7 +499,7 @@
   <!-- subscription -->
   <div class="subscription">
     <div class="subscription__container container">
-      <h2 class="subscription__title">Будь с&nbsp;нами на&nbsp;одной волне!</h2>
+      <h2 class="subscription__title section-title">Будь с&nbsp;нами на&nbsp;одной волне!</h2>
       <div class="subscription__descr">
         <p>Друзья, рады представить вам продукт нашего производства! Да-да, несмотря на&nbsp;то, что мы&nbsp;только начали свой путь радиовещателей, нам хочется, чтобы вы&nbsp;могли как следует нас расслышать:)</p>
         <p>Итак, встречайте! Портативный радиоприёмник-колонка W-Wave 1.0&nbsp;xm. Тщательный подбор всех делатей, ручная сборка, качественный звук. Пока доступно только 60&nbsp;штук в&nbsp;3&nbsp;цветах, но&nbsp;мы&nbsp;активно трудимся над новыми партиями и&nbsp;дизайном. Спешите приобрести!</p>
@@ -273,7 +511,7 @@
   <!-- about Us -->
   <div class="about-us">
     <div class="about-us__container container">
-      <h2 class="about-us__title title">О&nbsp;нас</h2>
+      <h2 class="about-us__title section-title">О&nbsp;нас</h2>
       <span class="about-us__subtitle">Приём-приём! Как слышно? Мы&nbsp;уже в&nbsp;эфире? Отлично, поехали!</span>
       <p class="about-us__descr">Друзья, мы&nbsp;будем очень рады, если вы&nbsp;поможете стать нам лучше. Нам важен каждый слушатель, поэтому вы&nbsp;можете поделиться обратной связью о&nbsp;наших предеачах, темах, подборках и&nbsp;вообще обо всём! Это можно сделать либо написав нам в&nbsp;форме ниже, либо кликнув на&nbsp;наши соцсети в&nbsp;подвале сайта. Спасибо! Услышимся!:)</p>
       <ul class="about-us__list list-reset">
