@@ -498,47 +498,90 @@
   </div>
   <!-- subscription -->
   <div class="subscription">
-    <div class="subscription__container container">
-      <h2 class="subscription__title section-title">Будь с&nbsp;нами на&nbsp;одной волне!</h2>
-      <div class="subscription__descr">
-        <p>Друзья, рады представить вам продукт нашего производства! Да-да, несмотря на&nbsp;то, что мы&nbsp;только начали свой путь радиовещателей, нам хочется, чтобы вы&nbsp;могли как следует нас расслышать:)</p>
-        <p>Итак, встречайте! Портативный радиоприёмник-колонка W-Wave 1.0&nbsp;xm. Тщательный подбор всех делатей, ручная сборка, качественный звук. Пока доступно только 60&nbsp;штук в&nbsp;3&nbsp;цветах, но&nbsp;мы&nbsp;активно трудимся над новыми партиями и&nbsp;дизайном. Спешите приобрести!</p>
+    <div class="subscription__container container flex">
+      <div class="subscription__ad">
+        <h2 class="subscription__title section-title">Будь с&nbsp;нами на&nbsp;одной волне!</h2>
+        <div class="subscription__descr">
+          <p>Друзья, рады представить вам продукт нашего производства! Да-да, несмотря на&nbsp;то, что мы&nbsp;только начали свой путь радиовещателей, нам хочется, чтобы вы&nbsp;могли как следует нас расслышать:)</p>
+          <p>Итак, встречайте! Портативный радиоприёмник-колонка W-Wave 1.0&nbsp;xm. Тщательный подбор всех делатей, ручная сборка, качественный звук. Пока доступно только 60&nbsp;штук в&nbsp;3&nbsp;цветах, но&nbsp;мы&nbsp;активно трудимся над новыми партиями и&nbsp;дизайном. Спешите приобрести!</p>
+        </div>
+        <span class="subscription__price">2&nbsp;800&nbsp;₽</span>
+        <button class="subscription__btn btn btn-reset flex">
+          <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_155716_684)">
+              <path d="M10.5 20C16.0228 20 20.5 15.5228 20.5 9.99998C20.5 4.47714 16.0228 0 10.5 0C4.97724 0 0.5 4.47714 0.5 9.99998C0.5 15.5228 4.97724 20 10.5 20Z" fill="#F0D288" />
+              <path d="M17.4383 4.54391L13.7294 3.17676L8.39558 10.8637L8.92665 7.3751L6.02046 5.68219L0.673828 12.1141C0.924147 13.3858 1.41008 14.5718 2.08375 15.6239L5.27361 11.7711L4.09981 16.2962L7.73695 17.6271L13.1407 9.8464L11.9568 14.2958L14.9032 16.0179L20.5579 10.3174C20.5591 10.2534 20.5598 10.1889 20.5598 10.1246C20.5598 8.78258 20.3016 7.50132 19.8328 6.32896L16.548 9.6538L17.4383 4.54391Z" fill="#121723" />
+            </g><defs><clipPath id="clip0_155716_684"><rect x="0.5" width="20" height="20" rx="10" fill="white" /></clipPath>
+            </defs>
+          </svg>
+          Купить на Яндекс.Маркет
+        </button>
       </div>
-      <span class="subscription__price">2&nbsp;800&nbsp;₽</span>
-      <button class="subscription__btn btn btn-reset"></button>
     </div>
   </div>
   <!-- about Us -->
   <div class="about-us">
     <div class="about-us__container container">
-      <h2 class="about-us__title section-title">О&nbsp;нас</h2>
-      <span class="about-us__subtitle">Приём-приём! Как слышно? Мы&nbsp;уже в&nbsp;эфире? Отлично, поехали!</span>
-      <p class="about-us__descr">Друзья, мы&nbsp;будем очень рады, если вы&nbsp;поможете стать нам лучше. Нам важен каждый слушатель, поэтому вы&nbsp;можете поделиться обратной связью о&nbsp;наших предеачах, темах, подборках и&nbsp;вообще обо всём! Это можно сделать либо написав нам в&nbsp;форме ниже, либо кликнув на&nbsp;наши соцсети в&nbsp;подвале сайта. Спасибо! Услышимся!:)</p>
-      <ul class="about-us__list list-reset">
+      <div class="about-us__contant">
+        <h2 class="about-us__title section-title">О&nbsp;нас</h2>
+        <span class="about-us__subtitle">Приём-приём! Как слышно? Мы&nbsp;уже в&nbsp;эфире? Отлично, поехали!</span>
+        <p class="about-us__descr">Друзья, мы&nbsp;будем очень рады, если вы&nbsp;поможете стать нам лучше. Нам важен каждый слушатель, поэтому вы&nbsp;можете поделиться обратной связью о&nbsp;наших предеачах, темах, подборках и&nbsp;вообще обо всём! Это можно сделать либо написав нам в&nbsp;форме ниже, либо кликнув на&nbsp;наши соцсети в&nbsp;подвале сайта. Спасибо! Услышимся! :)</p>
+      </div>
+      <ul class="about-us__list list-reset flex">
         <li class="about-us__card person">
+          <picture>
+            <source srcset="img/person_01.png" media="(min-width: 768px)">
+            <source srcset="img/person_01_small.png" media="(max-width: 767px)">
+            <img class="person__photo" src="img/person_01.png" alt="фото: Дмитрий Гутенберг">
+          </picture>
           <h3 class="person__name">Дмитрий Гутенберг</h3>
           <p class="person__phrase">Эксперт (ну, почти) по&nbsp;всем вопросам (почти)</p>
         </li>
         <li class="about-us__card person">
-          <h3 class="person__name">Дмитрий Гутенберг</h3>
-          <p class="person__phrase">Эксперт (ну, почти) по&nbsp;всем вопросам (почти)</p>
+          <picture>
+            <source srcset="img/person_02.png" media="(min-width: 768px)">
+            <source srcset="img/person_02_small.png" media="(max-width: 767px)">
+            <img class="person__photo" src="img/person_02.png" alt="фото: Анна Васильева">
+          </picture>
+          <h3 class="person__name">Анна Васильева</h3>
+          <p class="person__phrase">Как я&nbsp;здесь оказалась? А&nbsp;главное&nbsp;&mdash; зачем?</p>
         </li>
         <li class="about-us__card person">
-          <h3 class="person__name">Дмитрий Гутенберг</h3>
-          <p class="person__phrase">Эксперт (ну, почти) по&nbsp;всем вопросам (почти)</p>
+          <picture>
+            <source srcset="img/person_03.png" media="(min-width: 768px)">
+            <source srcset="img/person_03_small.png" media="(max-width: 767px)">
+            <img class="person__photo" src="img/person_03.png" alt="фото: Пётр Дмитриевский">
+          </picture>
+          <h3 class="person__name">Пётр Дмитриевский</h3>
+          <p class="person__phrase">Господа! Внимание! Благодарю за&nbsp;внимание!</p>
         </li>
         <li class="about-us__card person">
-          <h3 class="person__name">Дмитрий Гутенберг</h3>
-          <p class="person__phrase">Эксперт (ну, почти) по&nbsp;всем вопросам (почти)</p>
+          <picture>
+            <source srcset="img/person_04.png" media="(min-width: 768px)">
+            <source srcset="img/person_04_small.png" media="(max-width: 767px)">
+            <img class="person__photo" src="img/person_04.png" alt="фото: Татьяна Флеганова">
+          </picture>
+          <h3 class="person__name">Татьяна Флеганова</h3>
+          <p class="person__phrase">Одна я&nbsp;в&nbsp;пальто стою красивая, а&nbsp;вокруг...</p>
         </li>
       </ul>
-      <form class="about-us__form form" action="">
-        <input class="form__input" type="text">
-        <input class="form__input" type="text">
-        <input class="form__input" type="text">
-        <button class="form__btn btn btn-reset">Отправить</button>
-        <input class="form__checkbox" type="checkbox" name="" id="">
-        <span class="form__agreement"></span>
+      <form class="about-us__form form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+
+        <div class="form__inputs flex">
+          <textarea class="form__input form__textarea" id="message" name="message" rows="4" placeholder="Что скажете?" required aria-label="Введите ваше сообщение"></textarea>
+          <input class="form__input form__personal-data" type="text" id="name" name="name" placeholder="Имя" autocomplete="given-name" required aria-label="Введите ваше имя">
+          <input class="form__input form__personal-data" type="email" id="email" name="email" placeholder="Email" autocomplete="off" required aria-label="Введите ваш Email">
+        </div>
+
+        <!-- <div class="form__agreement flex"> -->
+          <button class="form__btn btn btn-reset" type="submit">Отправить</button>
+          <label class="form__checkbox checkbox flex">
+            <input class="checkbox__input" type="checkbox" id="consent" name="consent" required>
+            <span class="checkbox__box"></span>
+            <span class="checkbox__agreement">Согласен на обработку персональных данных</span>
+          </label>
+        <!-- </div> -->
+
       </form>
     </div>
   </div>
@@ -546,10 +589,10 @@
 
   <footer class="footer">
     <div class="footer__container container">
-      <div class="footer__main">
+      <div class="footer__main flex">
         <div class="footer__info">
           <a class="footer__logo logo" href="#"><img class="logo__white" src="img/logo_white.svg" alt="логотип W-Wave Radio"></a>
-          <ul class="footer__social">
+          <ul class="footer__social list-reset flex">
             <li class="social">
               <a class="social__link youtube" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -588,22 +631,26 @@
             </li>
           </ul>
         </div>
-        <nav class="footer__nav">
-          <ul class="footer__menu list-reset">
+        <nav class="footer__nav flex">
+          <ul class="footer__menu list-reset flex">
             <li class="footer__menu-item"><a class="footer__menu-link" href="#">Подкасты</a></li>
-            <li class="footer__menu-item"><a class="footer__menu-link" href="#">Плейлисты</a></li>
-            <li class="footer__menu-item"><a class="footer__menu-link" href="#">Новости</a></li>
             <li class="footer__menu-item"><a class="footer__menu-link" href="#">Передачи</a></li>
-            <li class="footer__menu-item"><a class="footer__menu-link" href="#">Сетка</a></li>
-            <li class="footer__menu-item"><a class="footer__menu-link" href="#">Блоги</a></li>
             <li class="footer__menu-item"><a class="footer__menu-link" href="#">Гости</a></li>
+          </ul>
+          <ul class="footer__menu list-reset flex">
+            <li class="footer__menu-item"><a class="footer__menu-link" href="#">Плейлисты</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="#">Сетка</a></li>
             <li class="footer__menu-item"><a class="footer__menu-link" href="#">О&nbsp;нас</a></li>
+          </ul>
+          <ul class="footer__menu list-reset flex">
+            <li class="footer__menu-item"><a class="footer__menu-link" href="#">Новости</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="#">Блоги</a></li>
             <li class="footer__menu-item"><a class="footer__menu-link" href="#">Топы</a></li>
           </ul>
         </nav>
       </div>
       <div class="footer__footer">
-        <span class="footer__copyright">W-WAVE <sup class="reg">&reg;</sup> 2023</span>
+        <span class="footer__copyright">W-WAVE &reg; 2023</span>
       </div>
     </div>
   </footer>

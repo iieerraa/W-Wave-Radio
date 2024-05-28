@@ -78,7 +78,7 @@ body {
 }
 
 :root {
-  /* --gap: 30px; */
+  --gap: 30px;
   /* --color_blue: #3f2aff; */
   --white: #fff;
 	--primary: #6d31ee;
@@ -177,8 +177,8 @@ body {
 /* hero */
 .hero__container{
   padding-top: 96px;
-  padding-bottom: 93px;
-  background-image: url(../img/microphone.png);
+  padding-bottom: 94px;
+  background-image: url('../img/microphone.png');
   background-repeat: no-repeat;
   background-position: right center;
 }
@@ -207,7 +207,7 @@ body {
 
 .hero__btn {
     background: var(--primary);
-    padding: 24px 54px;
+    padding: 25px 54px 22px 55px;
     font-size: 20px;
     color: var(--white);
     /* transition: outline 0.3s ease-in-out; */
@@ -229,7 +229,7 @@ body {
 
 .podcasts__list {
   flex-wrap: wrap;
-  gap: 30px;
+  gap: var(--gap);
 }
 
 .podcasts__card {
@@ -250,7 +250,7 @@ body {
   font-weight: 400;
   font-size: 10px;
   color: var(--black);
-  padding: 2px 8px;
+  padding: 3px 7px 2px 7px;
 }
 
 .podcast__body {
@@ -295,7 +295,7 @@ body {
 
 .broadcasts__list {
   flex-wrap: wrap;
-  gap: 30px;
+  gap: var(--gap);
   padding-top: 13px;
 }
 
@@ -307,27 +307,27 @@ body {
 }
 
 .broadcasts__card:nth-child(1){
-  background-image: url(../img/broadcast_01.png);
+  background-image: url('../img/broadcast_01.png');
 }
 
 .broadcasts__card:nth-child(2){
-  background-image: url(../img/broadcast_02.png);
+  background-image: url('../img/broadcast_02.png');
 }
 
 .broadcasts__card:nth-child(3){
-  background-image: url(../img/broadcast_03.png);
+  background-image: url('../img/broadcast_03.png');
 }
 
 .broadcasts__card:nth-child(4){
-  background-image: url(../img/broadcast_04.png);
+  background-image: url('../img/broadcast_04.png');
 }
 
 .broadcasts__card:nth-child(5){
-  background-image: url(../img/broadcast_05.png);
+  background-image: url('../img/broadcast_05.png');
 }
 
 .broadcasts__card:nth-child(6){
-  background-image: url(../img/broadcast_06.png);
+  background-image: url('../img/broadcast_06.png');
 }
 
 .broadcast__content {
@@ -361,7 +361,7 @@ body {
   position: absolute;
   left: 0;
   bottom: 94px;
-  background-image: url(../img/mic.png);
+  background-image: url('../img/mic.png');
   background-repeat: no-repeat;
   background-position: left top;
   max-width: 285px;
@@ -371,7 +371,7 @@ body {
 
 .broadcasts__btn {
   border: 2px solid var(--black);
-  padding: 9px 55px;
+  padding: 9px 54px 9px 55px;
   font-size: 16px;
   margin-bottom: 12px;
 }
@@ -422,7 +422,7 @@ body {
 }
 
 .guests__card {
-  gap: 30px;
+  gap: var(--gap);
 }
 
 .guest__info {
@@ -457,7 +457,7 @@ body {
 
 /* playlists */
 .playlists__container {
-  gap: 30px;
+  gap: var(--gap);
   padding-top: 95px;
   padding-bottom: 94px;
 }
@@ -491,7 +491,7 @@ body {
 .playlists__list {
   flex-wrap: wrap;
   padding-top: 13px;
-  gap: 30px;
+  gap: var(--gap);
 }
 
 .performer__img {
@@ -530,8 +530,272 @@ body {
 }
 
 .subscription__container {
+  justify-content: flex-end;
+  background-image: url('../img/subscription.png');
+  background-repeat: no-repeat;
+  /* background-position: calc(0% - 5px) calc(0% + 94px); */
+  background-position: left calc(0% + 94px);;
   padding-top: 95px;
-  padding-bottom: 94px;
+  padding-bottom: 132px;
+}
+
+.subscription__ad {
+  max-width: 445px;
+}
+
+.subscription__title{
+  position: relative;
+  color: var(--promo-color);
+  margin-bottom: 48px;
+}
+
+.subscription__title::after {
+  position: absolute;
+  content: '';
+  background-image: url('../img/wave_01.svg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -29px;
+}
+
+.subscription__descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+  color: var(--white);
+  margin-bottom: 29px;
+}
+
+.subscription__descr p:not(:nth-last-child(1)){
+  margin-bottom: 13px;
+}
+
+.subscription__price {
+  display: block;
+  font-weight: 500;
+  font-size: 30px;
+  color: var(--white);
+  margin-bottom: 26px;
+}
+
+.subscription__btn {
+  align-items: center; /* Центрирование по вертикали */
+  justify-content: center; /* Центрирование по горизонтали */
+  border: 2px solid var(--promo-color);
+  font-size: 20px;
+  line-height: 100%;
+  color: var(--promo-color);
+  padding: 24px 12px 22px 11px;
+}
+
+.subscription__btn svg {
+  margin-right: 8px;
+}
+
+/* about-us */
+.about-us {
+  background: var(--black);
+}
+
+.about-us__container {
+  padding-top: 96px;
+  padding-bottom: 91px;
+}
+
+.about-us__contant {
+  background-image: url('../img/dawn_spiral.svg');
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 461px;
+  margin-bottom: 29px;
+}
+
+.about-us__title {
+  color: var(--white);
+  margin-bottom: 12px;
+}
+
+.about-us__subtitle {
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--text-gray);
+  margin-bottom: 8px;
+}
+
+.about-us__descr {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  color: var(--text-gray);
+}
+
+.about-us__list {
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.about-us__card {
+  max-width: 255px;
+  width: 100%;
+}
+
+.person__photo {
+  margin-bottom: 25px;
+}
+
+.person__name {
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--white);
+  margin-bottom: 5px;
+}
+
+.person__phrase {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--text-gray);
+}
+
+/* form */
+.about-us__form {
+  max-width: 920px;
+}
+
+.form__inputs {
+  width: 100%;
+  flex-wrap: wrap;
+  gap: var(--gap);
+  margin-bottom: 30px;
+}
+
+.form__input {
+  border: 1px solid var(--white);
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--text-gray);
+}
+
+.form__textarea {
+  border-radius: 30px;
+  width: 100%;
+  min-height: 150px;
+  flex-grow: 1;
+  padding: 29px 15px 15px 31px;
+}
+
+.form__personal-data {
+  border-radius: 40px;
+  max-width: calc(50% - (var(--gap) / 2));
+  width: 100%;
+  min-height: 70px;
+  padding: 13px 10px 10px 31px;
+}
+
+.form__btn {
+  background: var(--primary);
+  font-size: 20px;
+  color: var(--white);
+  padding: 25px 54px 22px 55px;
+  margin-bottom: 30px;
+}
+
+.checkbox {
+  position: relative;
+  align-items: center;
+  padding-left: 22px;
+}
+
+.checkbox__input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.checkbox__box {
+  position: absolute;
+  box-shadow: 0 0 0 1px var(--white);
+  width: 12px;
+  height: 12px;
+  margin-top: -4px;
+  margin-left: -21px;
+}
+
+.checkbox__input:checked + .checkbox__box {
+  background-image: url('../img/check.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.checkbox__input:focus-visible + .checkbox__box {
+  box-shadow: 0 0 0 1px var(--white), 0 0 0 4px var(--primary-light);
+}
+
+
+.checkbox__agreement {
+  padding-top: 3px;
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--white);
 }
 
 /* footer */
+.footer {
+  background: var(--light-black);
+  background-image: url('../img/wave_02.svg');
+  background-repeat: no-repeat;
+  background-position: center calc(100% - 36px);
+  height: 323px;
+}
+
+.footer__container {
+  padding-top: 94px;
+}
+
+.footer__main {
+  justify-content: space-between;
+  margin-bottom: 113px;
+}
+
+.logo__white {
+  margin-bottom: 15px;
+}
+
+.footer__social {
+  gap: 21px;
+}
+
+.footer__nav {
+  column-gap: 109px;
+  max-width: 445px;
+  width: 100%;
+}
+
+.footer__menu {
+  flex-direction: column;
+  row-gap: 17px;
+}
+
+
+.footer__menu-link {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--white);
+}
+
+.footer__footer {
+  text-align: center;
+}
+
+.footer__copyright {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 103%;
+  color: var(--text-gray);
+}
