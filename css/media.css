@@ -6,7 +6,6 @@
 
   .header__container {
     position: relative;
-    /* flex-wrap: wrap; */
     justify-content: space-between;
     height: 144px;
     row-gap: 23px;
@@ -174,5 +173,174 @@
 }
 
 @media (max-width: 960px) {
+  .container {
+    padding-right: 114px;
+    padding-left: 114px;
+  }
 
+  .header__container {
+    height: 140px;
+  }
+
+  .header__search {
+    margin-right: 1px;
+  }
+
+  .header__nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 114px;
+    padding-left: 114px;
+  }
+
+  .header__menu {
+    gap: 0;
+  }
+
+  .header__menu-link {
+    font-size: 16px;
+  }
+
+  .hero__container {
+    background: none;
+  }
+
+  .podcasts__list {
+    --offsets: 0;
+  }
+
+  .broadcasts__container {
+    flex-direction: column;
+    padding-bottom: 216px;
+  }
+
+  .broadcasts__title {
+    margin-bottom: 109px;
+  }
+
+  .broadcasts__archive {
+    background-position: calc(0% + 212px) calc(100% - 30px);
+    background-size: 70px;
+    border-top: 1px solid var(--light-color);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 149px;
+    padding-left: 302px;
+    max-width: 100%;
+  }
+
+  .broadcasts__btn {
+    margin-bottom: 8px;
+  }
+
+  .guests__container {
+    padding-bottom: 89px;
+  }
+
+  .guests__card {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .guest__info {
+    padding-bottom: 75px;
+  }
+
+  .playlists__container {
+    padding-bottom: 112px;
+  }
+
+  .playlists__list {
+    --offsets: 1;
+  }
+
+  .subscription__container {
+    padding-top: 54px;
+    flex-direction: column;
+    gap: 44px;
+  }
+
+  .subscription__img {
+    padding-top: 0px;
+  }
+
+  .subscription__ad {
+    max-width: 100%;
+  }
+
+  .subscription__title {
+    max-width: 441px;
+    margin-bottom: 29px;
+  }
+
+  .subscription__title::after {
+    content: none;
+  }
+
+  .subscription__descr {
+    position: relative;
+    padding-top: 19px;
+  }
+
+  .subscription__descr::before {
+    position: absolute;
+    content: '';
+    background-image: url('../img/wave_03.svg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    right: 0;
+  }
+
+  .about-us__contant {
+    background-image: url('../img/dawn_spiral_768.svg');
+    background-position: 100% bottom;
+    max-width: 750px;
+    margin-left: -114px;
+    padding-left: 114px;
+    padding-right: 0px;
+    padding-bottom: 142px;
+    margin-bottom: 29px;
+  }
+
+  .form__personal-data {
+    max-width: 100%;
+  }
+
+  .footer {
+    min-height: 485px;
+  }
+
+  .footer__main {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 98px;
+  }
+
+  .footer__info {
+    margin-bottom: 73px;
+  }
+
+  .footer__social {
+    padding-left: 5px;
+  }
+
+  .social__link svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .footer__nav {
+    justify-content: space-between;
+    max-width: 100%;
+  }
+
+  .footer__menu {
+    row-gap: 28px;
+  }
 }
