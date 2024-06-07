@@ -79,7 +79,6 @@ body {
 
 :root {
   --gap: 30px;
-  /* --color_blue: #3f2aff; */
   --white: #fff;
 	--primary: #6d31ee;
 	--primary-shade: #4f28a5;
@@ -101,9 +100,11 @@ body {
 }
 
 .container {
-  max-width: 1110px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  padding-right: 45px;
+  padding-left: 45px;
 }
 
 .list-reset {
@@ -150,7 +151,7 @@ body {
 
 /* header */
 .header__container {
-  height: 88px;
+  min-height: 88px;
   padding-top: 34px;
 }
 
@@ -180,7 +181,7 @@ body {
   padding-bottom: 94px;
   background-image: url('../img/microphone.png');
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: calc(100% - 45px) calc(100% - 40px);
 }
 
 .hero__title{
@@ -202,12 +203,12 @@ body {
   font-size: 16px;
   line-height: 150%;
   color: var(--black);
-  padding-bottom: 45px;
+  margin-bottom: 45px;
 }
 
 .hero__btn {
     background: var(--primary);
-    padding: 25px 54px 22px 55px;
+    padding: 25px 54px 22px;
     font-size: 20px;
     color: var(--white);
     /* transition: outline 0.3s ease-in-out; */
@@ -230,11 +231,11 @@ body {
 .podcasts__list {
   flex-wrap: wrap;
   gap: var(--gap);
+  --offsets: 1;
 }
 
 .podcasts__card {
-  max-width: 540px;
-  width: 100%;
+  width: calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 1));
 }
 
 .podcast__preview {
@@ -295,13 +296,13 @@ body {
 
 .broadcasts__list {
   flex-wrap: wrap;
+  --offsets: 2;
   gap: var(--gap);
   padding-top: 13px;
 }
 
 .broadcasts__card {
-  max-width: 255px;
-  width: 100%;
+  width: calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 1));
   padding-top: 148px;
   background-repeat: no-repeat;
 }
@@ -359,7 +360,7 @@ body {
 
 .broadcasts__archive {
   position: absolute;
-  left: 0;
+  left: 45px;
   bottom: 94px;
   background-image: url('../img/mic.png');
   background-repeat: no-repeat;
@@ -371,7 +372,7 @@ body {
 
 .broadcasts__btn {
   border: 2px solid var(--black);
-  padding: 9px 54px 9px 55px;
+  padding: 9px 53px 9px 55px;
   font-size: 16px;
   margin-bottom: 12px;
 }
@@ -492,6 +493,15 @@ body {
   flex-wrap: wrap;
   padding-top: 13px;
   gap: var(--gap);
+  --offsets: 3;
+}
+
+.playlists__card {
+  width: calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 1));
+}
+
+.performer__link {
+  flex-direction: column;
 }
 
 .performer__img {
@@ -530,17 +540,16 @@ body {
 }
 
 .subscription__container {
-  justify-content: flex-end;
-  background-image: url('../img/subscription.png');
-  background-repeat: no-repeat;
-  /* background-position: calc(0% - 5px) calc(0% + 94px); */
-  background-position: left calc(0% + 94px);;
-  padding-top: 95px;
+  justify-content: space-between;
+  gap: 30px;
+  padding-top: 94px;
   padding-bottom: 132px;
+  padding-left: 40px;
 }
 
 .subscription__ad {
   max-width: 445px;
+  padding-top: 1px;
 }
 
 .subscription__title{
@@ -582,8 +591,8 @@ body {
 }
 
 .subscription__btn {
-  align-items: center; /* Центрирование по вертикали */
-  justify-content: center; /* Центрирование по горизонтали */
+  align-items: center;
+  justify-content: center;
   border: 2px solid var(--promo-color);
   font-size: 20px;
   line-height: 100%;
@@ -592,7 +601,7 @@ body {
 }
 
 .subscription__btn svg {
-  margin-right: 8px;
+  margin-right: 7px;
 }
 
 /* about-us */
@@ -635,13 +644,13 @@ body {
 }
 
 .about-us__list {
-  justify-content: space-between;
+  --offsets: 3;
+  gap: var(--gap);
   margin-bottom: 30px;
 }
 
 .about-us__card {
-  max-width: 255px;
-  width: 100%;
+  width: calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 1));
 }
 
 .person__photo {
@@ -679,6 +688,7 @@ body {
   font-weight: 400;
   font-size: 20px;
   color: var(--text-gray);
+  background-color: var(--black);
 }
 
 .form__textarea {
@@ -701,7 +711,7 @@ body {
   background: var(--primary);
   font-size: 20px;
   color: var(--white);
-  padding: 25px 54px 22px 55px;
+  padding: 25px 54px 22px;
   margin-bottom: 30px;
 }
 

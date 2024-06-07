@@ -1,1 +1,178 @@
-@media (max-width: 1200px) {}
+@media (max-width: 1110px) {
+  .container {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+
+  .header__container {
+    position: relative;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    height: 144px;
+    row-gap: 23px;
+    padding-top: 33px;
+  }
+
+  .header__logo {
+    max-width: 112px;
+  }
+
+  .header__nav {
+    position: absolute;
+    order: 3;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 19px;
+    padding-right: 100px;
+    padding-left: 100px;
+    border: 1px solid var(--light-color);
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .header__menu {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__search {
+    order: 2;
+    margin-top: -5px;
+  }
+
+  .hero__container {
+    padding-top: 92px;
+    padding-bottom: 90px;
+    background-image: url('../img/microphone_1110.png');
+    background-position: calc(100% - 99px) calc(100% - 90px);
+  }
+
+  .hero__title {
+    margin-bottom: 14px;
+  }
+
+  .hero__descr {
+    max-width: 539px;
+    margin-bottom: 20px;
+  }
+
+  .broadcasts__container {
+    padding-bottom: 93px;
+  }
+
+  .broadcasts__list {
+    --offsets: 1;
+  }
+
+  .broadcasts__archive {
+    left: 100px;
+    bottom: 93px;
+  }
+
+  .broadcasts__btn {
+    padding: 8px 53px 9px 55px;
+    margin-bottom: 13px;
+  }
+
+  .guests__container {
+    padding-bottom: 88px;
+  }
+
+  .guests__descr {
+    max-width: 536px;
+  }
+
+  .guests__list {
+    gap: 45px;
+  }
+
+  .guest__info {
+    max-width: 362px;
+  }
+
+  .guest__broadcast {
+    bottom: 5px;
+    padding: 10px 18px 8px;
+  }
+
+  .playlists__container {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .playlists__info {
+    max-width: 100%;
+  }
+
+  .playlists__descr {
+    margin-bottom: 0px;
+  }
+
+  .playlists__list {
+    padding-top: 0;
+    --offsets: 2;
+  }
+
+  .performer__link {
+    flex-direction: row;
+  }
+
+  .performer__photo {
+    max-width: 112px;
+  }
+
+  .performer__country {
+    left: 0;
+  }
+
+  .performer__info {
+    flex-grow: 1;
+    padding-top: 38px;
+    padding-left: 9px;
+    padding-right: 5px;
+  }
+
+  .subscription__container {
+    background-position: calc(0% + 100px) calc(0% + 212px);
+    background-size: 397px;
+    padding-bottom: 94px;
+  }
+
+  .subscription__img {
+    padding-top: 118px;
+  }
+
+  .subscription__ad {
+    max-width: 397px;
+  }
+
+  .about-us__container {
+    padding-top: 95px;
+    padding-bottom: 92px;
+  }
+
+  .subscription__price {
+    margin-bottom: 27px;
+  }
+
+  .about-us__contant {
+    background-image: url(../img/dawn.svg);
+    padding-right: 270px;
+    margin-bottom: 29px;
+  }
+
+  .about-us__list {
+    --offsets: 1;
+    flex-wrap: wrap;
+    row-gap: 29px;
+  }
+
+  .logo__white {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 960px) {
+
+}
