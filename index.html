@@ -185,6 +185,7 @@
       <h2 class="broadcasts__title section-title">Передачи</h2>
       <ul class="broadcasts__list list-reset flex">
         <li class="broadcasts__card broadcast">
+          <img class="broadcast__preview" src="img/broadcast_01.png" alt="">
           <div class="broadcast__content">
             <h3 class="broadcast__title">О&nbsp;людях и&nbsp;книгах</h3>
             <p class="broadcast__descr">Анонсируется отдельно</p>
@@ -194,6 +195,7 @@
           </div>
         </li>
         <li class="broadcasts__card broadcast">
+          <img class="broadcast__preview" src="img/broadcast_02.png" alt="">
           <div class="broadcast__content">
             <h3 class="broadcast__title">Графомания&nbsp;td</h3>
             <p class="broadcast__descr">По&nbsp;понедельникам в&nbsp;10:00</p>
@@ -203,6 +205,7 @@
           </div>
         </li>
         <li class="broadcasts__card broadcast">
+          <img class="broadcast__preview" src="img/broadcast_03.png" alt="">
           <div class="broadcast__content">
             <h3 class="broadcast__title">Не&nbsp;Рим, не&nbsp;Троя</h3>
             <p class="broadcast__descr">По&nbsp;вторникам в&nbsp;12:00</p>
@@ -212,6 +215,7 @@
           </div>
         </li>
         <li class="broadcasts__card broadcast">
+          <img class="broadcast__preview" src="img/broadcast_04.png" alt="">
           <div class="broadcast__content">
             <h3 class="broadcast__title">Эрудит</h3>
             <p class="broadcast__descr">По&nbsp;пятницам в&nbsp;17:00</p>
@@ -221,6 +225,7 @@
           </div>
         </li>
         <li class="broadcasts__card broadcast">
+          <img class="broadcast__preview" src="img/broadcast_05.png" alt="">
           <div class="broadcast__content">
             <h3 class="broadcast__title">Тонкости эпох</h3>
             <p class="broadcast__descr">По&nbsp;субботам в&nbsp;10:00</p>
@@ -230,6 +235,7 @@
           </div>
         </li>
         <li class="broadcasts__card broadcast">
+          <img class="broadcast__preview" src="img/broadcast_06.png" alt="">
           <div class="broadcast__content">
             <h3 class="broadcast__title">Живые мысли</h3>
             <p class="broadcast__descr">По&nbsp;воскресеньям в&nbsp;15:30</p>
@@ -239,9 +245,11 @@
           </div>
         </li>
       </ul>
-      <div class="broadcasts__archive">
-        <button class="broadcasts__btn btn btn-reset">Архив</button>
-        <p class="broadcasts__descr">В&nbsp;архив попадают все передачи, которые вы&nbsp;пропустили! Enjoy :)</p>
+      <div class="broadcasts__archive archive flex">
+        <div class="archive__content">
+          <button class="archive__btn btn btn-reset">Архив</button>
+          <p class="archive__descr">В&nbsp;архив попадают все передачи, которые вы&nbsp;пропустили! Enjoy :)</p>
+        </div>
       </div>
     </div>
   </div>
@@ -584,14 +592,12 @@
           <input class="form__input form__personal-data" type="email" id="email" name="email" placeholder="Email" autocomplete="off" required aria-label="Введите ваш Email">
         </div>
 
-        <!-- <div class="form__agreement flex"> -->
           <button class="form__btn btn btn-reset" type="submit">Отправить</button>
           <label class="form__checkbox checkbox flex">
             <input class="checkbox__input" type="checkbox" id="consent" name="consent" required>
             <span class="checkbox__box"></span>
             <span class="checkbox__agreement">Согласен на обработку персональных данных</span>
           </label>
-        <!-- </div> -->
 
       </form>
     </div>

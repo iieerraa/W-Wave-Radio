@@ -303,33 +303,14 @@ body {
 
 .broadcasts__card {
   width: calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 1));
-  padding-top: 148px;
   background-repeat: no-repeat;
+  font-size: 0;
 }
 
-.broadcasts__card:nth-child(1){
-  background-image: url('../img/broadcast_01.png');
+.broadcast__preview {
+  width: 100%;
 }
 
-.broadcasts__card:nth-child(2){
-  background-image: url('../img/broadcast_02.png');
-}
-
-.broadcasts__card:nth-child(3){
-  background-image: url('../img/broadcast_03.png');
-}
-
-.broadcasts__card:nth-child(4){
-  background-image: url('../img/broadcast_04.png');
-}
-
-.broadcasts__card:nth-child(5){
-  background-image: url('../img/broadcast_05.png');
-}
-
-.broadcasts__card:nth-child(6){
-  background-image: url('../img/broadcast_06.png');
-}
 
 .broadcast__content {
   border: 1px solid var(--light-color);
@@ -362,22 +343,25 @@ body {
   position: absolute;
   left: 45px;
   bottom: 94px;
+  max-width: 285px;
+  width: 100%;
+}
+
+.archive__content {
   background-image: url('../img/mic.png');
   background-repeat: no-repeat;
   background-position: left top;
-  max-width: 285px;
-  width: 100%;
   padding-top: 113px;
 }
 
-.broadcasts__btn {
+.archive__btn {
   border: 2px solid var(--black);
   padding: 9px 53px 9px 55px;
   font-size: 16px;
   margin-bottom: 12px;
 }
 
-.broadcasts__descr {
+.archive__descr {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
