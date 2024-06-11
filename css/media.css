@@ -368,3 +368,24 @@
     row-gap: 28px;
   }
 }
+
+
+@media (max-width: 715px) {
+
+  .guest__info {
+    max-width: 100%;
+  }
+
+  .performer__name {
+    font-size: 12px;
+  }
+
+  .performer__records {
+    font-size: 9px;
+  }
+
+}
+
+@media (max-width: 670px) {
+
+}

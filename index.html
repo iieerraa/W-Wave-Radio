@@ -33,12 +33,12 @@
           </li>
         </ul>
       </nav>
-      <a class="header__search" href="#" aria-label="Поиск по сайту">
+      <button class="header__search btn-reset" aria-label="Поиск по сайту">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
           <path d="M21 21L16.65 16.65" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
-      </a>
+      </button>
     </div>
   </header>
 
@@ -48,7 +48,9 @@
     <div class="hero__container container">
       <h1 class="hero__title">Радио <em>W-Wave</em></h1>
       <p class="hero__descr">Привет, на&nbsp;связи W-Wave! Раньше мы&nbsp;были изданием, а&nbsp;теперь пробуем себя в&nbsp;разоворном жанре. Говорим о&nbsp;музыке, политике, истории, науке и&nbsp;культуре. Здесь, помимо прямого эфира&nbsp;&mdash; архив передач и&nbsp;многое другое :)</p>
-      <button class="hero__btn btn btn-reset">Слушать эфир</button>
+      <div class="hero__btn btn">
+        <a class="hero__btn-link" href="#">Слушать эфир</a>
+      </div>
     </div>
   </div>
   <!-- podcasts -->
@@ -59,8 +61,8 @@
         <li class="podcasts__card podcast flex">
           <div class="podcast__preview">
             <picture>
-              <source srcset="img/podcast_01.png" media="(min-width: 768px)">
-              <source srcset="img/podcast_01_small.png" media="(max-width: 767px)">
+              <source srcset="img/podcast_01.png" media="(min-width: 715px)">
+              <!-- <source srcset="img/podcast_01_small.png" media="(max-width: 715px)"> -->
               <img src="img/podcast_01.png" alt="">
             </picture>
             <span class="podcast__date">14&nbsp;июня</span>
@@ -74,8 +76,8 @@
         <li class="podcasts__card podcast flex">
           <div class="podcast__preview">
             <picture>
-              <source srcset="img/podcast_02.png" media="(min-width: 768px)">
-              <source srcset="img/podcast_02_small.png" media="(max-width: 767px)">
+              <source srcset="img/podcast_02.png" media="(min-width: 715pxpx)">
+              <!-- <source srcset="img/podcast_02_small.png" media="(max-width: 715px)"> -->
               <img src="img/podcast_02.png" alt="">
             </picture>
             <span class="podcast__date">11&nbsp;июня</span>
@@ -89,8 +91,8 @@
         <li class="podcasts__card podcast flex">
           <div class="podcast__preview">
             <picture>
-              <source srcset="img/podcast_03.png" media="(min-width: 768px)">
-              <source srcset="img/podcast_03_small.png" media="(max-width: 767px)">
+              <source srcset="img/podcast_03.png" media="(min-width: 715pxpx)">
+              <!-- <source srcset="img/podcast_03_small.png" media="(max-width: 715px)"> -->
               <img src="img/podcast_03.png" alt="">
             </picture>
             <span class="podcast__date">8&nbsp;июня</span>
@@ -104,8 +106,8 @@
         <li class="podcasts__card podcast flex">
           <div class="podcast__preview">
             <picture>
-              <source srcset="img/podcast_04.png" media="(min-width: 768px)">
-              <source srcset="img/podcast_04_small.png" media="(max-width: 767px)">
+              <source srcset="img/podcast_04.png" media="(min-width: 715pxpx)">
+              <!-- <source srcset="img/podcast_04_small.png" media="(max-width: 715px)"> -->
               <img src="img/podcast_04.png" alt="">
             </picture>
             <span class="podcast__date">5&nbsp;июня</span>
@@ -119,8 +121,8 @@
         <li class="podcasts__card podcast flex">
           <div class="podcast__preview">
             <picture>
-              <source srcset="img/podcast_05.png" media="(min-width: 768px)">
-              <source srcset="img/podcast_05_small.png" media="(max-width: 767px)">
+              <source srcset="img/podcast_05.png" media="(min-width: 715pxpx)">
+              <!-- <source srcset="img/podcast_05_small.png" media="(max-width: 715px)"> -->
               <img src="img/podcast_05.png" alt="">
             </picture>
             <span class="podcast__date">2&nbsp;июня</span>
@@ -134,8 +136,8 @@
         <li class="podcasts__card podcast flex">
           <div class="podcast__preview">
             <picture>
-              <source srcset="img/podcast_06.png" media="(min-width: 768px)">
-              <source srcset="img/podcast_06_small.png" media="(max-width: 767px)">
+              <source srcset="img/podcast_06.png" media="(min-width: 715pxpx)">
+              <!-- <source srcset="img/podcast_06_small.png" media="(max-width: 715px)"> -->
               <img src="img/podcast_06.png" alt="">
             </picture>
             <span class="podcast__date">28&nbsp;мая</span>
@@ -149,8 +151,8 @@
         <li class="podcasts__card podcast flex">
           <div class="podcast__preview">
             <picture>
-              <source srcset="img/podcast_07.png" media="(min-width: 768px)">
-              <source srcset="img/podcast_07_small.png" media="(max-width: 767px)">
+              <source srcset="img/podcast_07.png" media="(min-width: 715pxpx)">
+              <!-- <source srcset="img/podcast_07_small.png" media="(max-width: 715px)"> -->
               <img src="img/podcast_07.png" alt="">
             </picture>
             <span class="podcast__date">22&nbsp;мая</span>
@@ -164,8 +166,8 @@
         <li class="podcasts__card podcast flex">
           <div class="podcast__preview">
             <picture>
-              <source srcset="img/podcast_08.png" media="(min-width: 768px)">
-              <source srcset="img/podcast_08_small.png" media="(max-width: 767px)">
+              <source srcset="img/podcast_08.png" media="(min-width: 715pxpx)">
+              <!-- <source srcset="img/podcast_08_small.png" media="(max-width: 715px)"> -->
               <img src="img/podcast_08.png" alt="">
             </picture>
             <span class="podcast__date">18&nbsp;мая</span>
@@ -247,7 +249,9 @@
       </ul>
       <div class="broadcasts__archive archive flex">
         <div class="archive__content">
-          <button class="archive__btn btn btn-reset">Архив</button>
+          <div class="archive__btn btn">
+            <a href="#">Архив</a>
+          </div>
           <p class="archive__descr">В&nbsp;архив попадают все передачи, которые вы&nbsp;пропустили! Enjoy :)</p>
         </div>
       </div>
@@ -269,7 +273,9 @@
           <div class="guest__info">
             <h3 class="guest__name">Ольга Мартынова</h3>
             <p class="guest__descr">Российский искусствовед, арт-критик, куратор выставок, дизайнер, кандидат культурологии. Арт-критик газеты &laquo;Коммерсантъ&raquo;. Ведёт активную блогерскую деятельность как куратор музея &laquo;Гараж&raquo;, коим является с&nbsp;2016&nbsp;года.</p>
-            <button class="guest__broadcast btn-reset btn">Эфиры с&nbsp;гостем</button>
+            <div class="guest__broadcast btn">
+              <a href="#">Эфиры с&nbsp;гостем</a>
+            </div>
           </div>
         </li>
         <li class="guests__card guest flex">
@@ -281,7 +287,9 @@
           <div class="guest__info">
             <h3 class="guest__name">Денис Гришин</h3>
             <p class="guest__descr">Однозначно, элементы политического процесса являются только методом политического участия и&nbsp;смешаны с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершённой неузнаваемости, из-за чего возрастает их&nbsp;статус бесполезности.</p>
-            <button class="guest__broadcast btn-reset btn">Эфиры с&nbsp;гостем</button>
+            <div class="guest__broadcast btn">
+              <a href="#">Эфиры с&nbsp;гостем</a>
+            </div>
           </div>
         </li>
         <li class="guests__card guest flex">
@@ -293,7 +301,9 @@
           <div class="guest__info">
             <h3 class="guest__name">Ольга Мартынова</h3>
             <p class="guest__descr">С&nbsp;другой стороны, высококачественный прототип будущего проекта выявляет срочную потребность дальнейших направлений развития. В&nbsp;рамках спецификации современных стандартов, реплицированные с&nbsp;зарубежных источников.</p>
-            <button class="guest__broadcast btn-reset btn">Эфиры с&nbsp;гостем</button>
+            <div class="guest__broadcast btn">
+              <a href="#">Эфиры с&nbsp;гостем</a>
+            </div>
           </div>
         </li>
       </ul>
@@ -314,7 +324,7 @@
             <div class="performer__img">
               <picture>
                 <source srcset="img/performer_01.png" media="(min-width: 1024px)">
-                <source srcset="img/performer_01_768.png" media="(max-width: 1023px)">
+                <source srcset="img/performer_01_768.png" media="(min-width: 715px)">
                 <img class="performer__photo" src="img/performer_01.png" alt="фото: Ploho">
               </picture>
               <img class="performer__country" src="img/country_ru.svg" alt="страна - Россия">
@@ -330,14 +340,14 @@
             <div class="performer__img">
               <picture>
                 <source srcset="img/performer_02.png" media="(min-width: 1024px)">
-                <source srcset="img/performer_02_768.png" media="(max-width: 1023px)">
+                <source srcset="img/performer_02_768.png" media="(min-width: 715px)">
                 <img class="performer__photo" src="img/performer_02.png" alt="фото: Molchat Doma">
               </picture>
               <img class="performer__country" src="img/country_ru.svg" alt="страна - Россия">
             </div>
             <div class="performer__info">
               <h3 class="performer__name">Molchat Doma</h3>
-              <p class="performer__records">Все песни</p>
+              <p class="performer__records">Все песни</p>
             </div>
           </a>
         </li>
@@ -346,14 +356,14 @@
             <div class="performer__img">
               <picture>
                 <source srcset="img/performer_03.png" media="(min-width: 1024px)">
-                <source srcset="img/performer_03_768.png" media="(max-width: 1023px)">
+                <source srcset="img/performer_03_768.png" media="(min-width: 715px)">
                 <img class="performer__photo" src="img/performer_03.png" alt="фото: Motorama">
               </picture>
               <img class="performer__country" src="img/country_ru.svg" alt="страна - Россия">
             </div>
             <div class="performer__info">
               <h3 class="performer__name">Motorama</h3>
-              <p class="performer__records">Все синглы</p>
+              <p class="performer__records">Все синглы</p>
             </div>
           </a>
         </li>
@@ -362,7 +372,7 @@
             <div class="performer__img">
               <picture>
                 <source srcset="img/performer_04.png" media="(min-width: 1024px)">
-                <source srcset="img/performer_04_768.png" media="(max-width: 1023px)">
+                <source srcset="img/performer_04_768.png" media="(min-width: 715px)">
                 <img class="performer__photo" src="img/performer_04.png" alt="фото: Human Tetris">
               </picture>
               <img class="performer__country" src="img/country_ru.svg" alt="страна - Россия">
@@ -378,14 +388,14 @@
             <div class="performer__img">
               <picture>
                 <source srcset="img/performer_05.png" media="(min-width: 1024px)">
-                <source srcset="img/performer_05_768.png" media="(max-width: 1023px)">
+                <source srcset="img/performer_05_768.png" media="(min-width: 715px)">
                 <img class="performer__photo" src="img/performer_05.png" alt="фото: Буерак">
               </picture>
               <img class="performer__country" src="img/country_ru.svg" alt="страна - Россия">
             </div>
             <div class="performer__info">
               <h3 class="performer__name">Буерак</h3>
-              <p class="performer__records">Все EP</p>
+              <p class="performer__records">Все EP</p>
             </div>
           </a>
         </li>
@@ -394,13 +404,13 @@
             <div class="performer__img">
               <picture>
                 <source srcset="img/performer_06.png" media="(min-width: 1024px)">
-                <source srcset="img/performer_06_768.png" media="(max-width: 1023px)">
-                <img class="performer__photo" src="img/performer_06.png" alt="фото: Июльские Дни">
+                <source srcset="img/performer_06_768.png" media="(min-width: 715px)">
+                <img class="performer__photo" src="img/performer_06.png" alt="фото: Июльские Дни">
               </picture>
               <img class="performer__country" src="img/country_ru.svg" alt="страна - Россия">
             </div>
             <div class="performer__info">
-              <h3 class="performer__name">Июльские Дни</h3>
+              <h3 class="performer__name">Июльские Дни</h3>
               <p class="performer__records">Альбом «Колокол»</p>
             </div>
           </a>
@@ -410,14 +420,14 @@
             <div class="performer__img">
               <picture>
                 <source srcset="img/performer_07.png" media="(min-width: 1024px)">
-                <source srcset="img/performer_07_768.png" media="(max-width: 1023px)">
+                <source srcset="img/performer_07_768.png" media="(min-width: 715px)">
                 <img class="performer__photo" src="img/performer_07.png" alt="фото: Joy Division">
               </picture>
               <img class="performer__country" src="img/country_en.svg" alt="страна - Англия">
             </div>
             <div class="performer__info">
               <h3 class="performer__name">Joy Division</h3>
-              <p class="performer__records">Лучшее за всё время</p>
+              <p class="performer__records">Лучшее за всё время</p>
             </div>
           </a>
         </li>
@@ -426,14 +436,14 @@
             <div class="performer__img">
               <picture>
                 <source srcset="img/performer_08.png" media="(min-width: 1024px)">
-                <source srcset="img/performer_08_768.png" media="(max-width: 1023px)">
+                <source srcset="img/performer_08_768.png" media="(min-width: 715px)">
                 <img class="performer__photo" src="img/performer_08.png" alt="фото: The Cure">
               </picture>
               <img class="performer__country" src="img/country_en.svg" alt="страна - Англия">
             </div>
             <div class="performer__info">
               <h3 class="performer__name">The Cure</h3>
-              <p class="performer__records">Лучшее за всё время</p>
+              <p class="performer__records">Лучшее за всё время</p>
             </div>
           </a>
         </li>
@@ -442,7 +452,7 @@
             <div class="performer__img">
               <picture>
                 <source srcset="img/performer_09.png" media="(min-width: 1024px)">
-                <source srcset="img/performer_09_768.png" media="(max-width: 1023px)">
+                <source srcset="img/performer_09_768.png" media="(min-width: 715px)">
                 <img class="performer__photo" src="img/performer_09.png" alt="фото: The Smiths">
               </picture>
               <img class="performer__country" src="img/country_en.svg" alt="страна - Англия">
@@ -458,7 +468,7 @@
             <div class="performer__img">
               <picture>
                 <source srcset="img/performer_10.png" media="(min-width: 1024px)">
-                <source srcset="img/performer_10_768.png" media="(max-width: 1023px)">
+                <source srcset="img/performer_10_768.png" media="(min-width: 715px)">
                 <img class="performer__photo" src="img/performer_10.png" alt="фото: New Order">
               </picture>
               <img class="performer__country" src="img/country_en.svg" alt="страна - Англия">
@@ -474,14 +484,14 @@
             <div class="performer__img">
               <picture>
                 <source srcset="img/performer_11.png" media="(min-width: 1024px)">
-                <source srcset="img/performer_11_768.png" media="(max-width: 1023px)">
+                <source srcset="img/performer_11_768.png" media="(min-width: 715px)">
                 <img class="performer__photo" src="img/performer_11.png" alt="фото: Bauhaus">
               </picture>
               <img class="performer__country" src="img/country_en.svg" alt="страна - Англия">
             </div>
             <div class="performer__info">
               <h3 class="performer__name">Bauhaus</h3>
-              <p class="performer__records">Все синглы</p>
+              <p class="performer__records">Все синглы</p>
             </div>
           </a>
         </li>
@@ -490,14 +500,14 @@
             <div class="performer__img">
               <picture>
                 <source srcset="img/performer_12.png" media="(min-width: 1024px)">
-                <source srcset="img/performer_12_768.png" media="(max-width: 1023px)">
+                <source srcset="img/performer_12_768.png" media="(min-width: 715px)">
                 <img class="performer__photo" src="img/performer_12.png" alt="фото: Gang Of Four">
               </picture>
               <img class="performer__country" src="img/country_en.svg" alt="страна - Англия">
             </div>
             <div class="performer__info">
               <h3 class="performer__name">Gang Of Four</h3>
-              <p class="performer__records">3 последних альбома</p>
+              <p class="performer__records">3 последних альбома</p>
             </div>
           </a>
         </li>
@@ -521,16 +531,19 @@
           <p>Итак, встречайте! Портативный радиоприёмник-колонка W-Wave 1.0&nbsp;xm. Тщательный подбор всех делатей, ручная сборка, качественный звук. Пока доступно только 60&nbsp;штук в&nbsp;3&nbsp;цветах, но&nbsp;мы&nbsp;активно трудимся над новыми партиями и&nbsp;дизайном. Спешите приобрести!</p>
         </div>
         <span class="subscription__price">2&nbsp;800&nbsp;₽</span>
-        <button class="subscription__btn btn btn-reset flex">
-          <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_155716_684)">
-              <path d="M10.5 20C16.0228 20 20.5 15.5228 20.5 9.99998C20.5 4.47714 16.0228 0 10.5 0C4.97724 0 0.5 4.47714 0.5 9.99998C0.5 15.5228 4.97724 20 10.5 20Z" fill="#F0D288" />
-              <path d="M17.4383 4.54391L13.7294 3.17676L8.39558 10.8637L8.92665 7.3751L6.02046 5.68219L0.673828 12.1141C0.924147 13.3858 1.41008 14.5718 2.08375 15.6239L5.27361 11.7711L4.09981 16.2962L7.73695 17.6271L13.1407 9.8464L11.9568 14.2958L14.9032 16.0179L20.5579 10.3174C20.5591 10.2534 20.5598 10.1889 20.5598 10.1246C20.5598 8.78258 20.3016 7.50132 19.8328 6.32896L16.548 9.6538L17.4383 4.54391Z" fill="#121723" />
-            </g><defs><clipPath id="clip0_155716_684"><rect x="0.5" width="20" height="20" rx="10" fill="white" /></clipPath>
-            </defs>
-          </svg>
-          Купить на Яндекс.Маркет
-        </button>
+
+        <div class="subscription__btn btn">
+          <a class="flex" href="#">
+            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_155716_684)">
+                <path d="M10.5 20C16.0228 20 20.5 15.5228 20.5 9.99998C20.5 4.47714 16.0228 0 10.5 0C4.97724 0 0.5 4.47714 0.5 9.99998C0.5 15.5228 4.97724 20 10.5 20Z" fill="#F0D288" />
+                <path d="M17.4383 4.54391L13.7294 3.17676L8.39558 10.8637L8.92665 7.3751L6.02046 5.68219L0.673828 12.1141C0.924147 13.3858 1.41008 14.5718 2.08375 15.6239L5.27361 11.7711L4.09981 16.2962L7.73695 17.6271L13.1407 9.8464L11.9568 14.2958L14.9032 16.0179L20.5579 10.3174C20.5591 10.2534 20.5598 10.1889 20.5598 10.1246C20.5598 8.78258 20.3016 7.50132 19.8328 6.32896L16.548 9.6538L17.4383 4.54391Z" fill="#121723" />
+              </g><defs><clipPath id="clip0_155716_684"><rect x="0.5" width="20" height="20" rx="10" fill="white" /></clipPath>
+              </defs>
+            </svg>
+            Купить на Яндекс.Маркет
+          </a>
+        </div>
       </div>
     </div>
   </div>
