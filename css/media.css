@@ -387,5 +387,427 @@
 }
 
 @media (max-width: 670px) {
+  .container {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  .header__container {
+    height: 105px;
+    padding-top: 20px;
+  }
+
+  .header__logo {
+    max-width: 87px;
+    margin-right: 0px;
+  }
+
+  .header__search {
+    margin-right: 0px;
+  }
+
+  .header__nav {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  .header__menu {
+    gap: 23px;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none; /* Для Firefox */
+  }
+
+  .header__menu::-webkit-scrollbar {
+    display: none; /* Для WebKit браузеров */
+  }
+
+  .hero__container {
+    padding-top: 41px;
+    padding-bottom: 40px;
+  }
+
+  .hero__title {
+    font-size: 32px;
+    margin-bottom: 7px;
+  }
+
+  .hero__descr {
+    font-size: 14px;
+  }
+
+  .hero__btn {
+    background: var(--primary);
+    padding: 16px 46px 16px 45px;
+    font-size: 16px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .podcasts__container {
+    padding-top: 55px;
+    padding-bottom: 54px;
+  }
+
+  .podcasts__title {
+    margin-bottom: 19px;
+  }
+
+  .podcasts__card {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .podcast__date {
+    top: 0;
+    bottom: unset;
+  }
+
+  .podcast__body {
+    padding-top: 30px;
+    padding-bottom: 29px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .podcast__time {
+    margin-bottom: 5px;
+  }
+
+  .podcast__title {
+    font-size: 16px;
+    margin-bottom: 3px;
+  }
+
+  .podcast__autor {
+    font-size: 12px;
+  }
+
+  .broadcasts__container {
+    padding-top: 55px;
+    padding-bottom: 220px;
+  }
+
+  .broadcasts__title {
+    margin-right: 0px;
+    margin-bottom: 29px;
+  }
+
+  .broadcasts__list {
+    padding-top: 0px;
+  }
+
+  .broadcasts__card {
+    display: flex;
+    flex-direction: column;
+    min-height: 149px;
+  }
+
+  .broadcast__preview {
+    max-height: 50px;
+    object-fit: cover;
+  }
+
+  .broadcast__content {
+    position: relative;
+    max-height: unset;
+    flex-grow: 1;
+    padding: 9px;
+    padding-bottom: 23px;
+  }
+
+  .broadcast__title {
+    font-size: 12px;
+    line-height: 100%;
+    margin-bottom: 5px;
+  }
+
+  .broadcast__descr {
+    font-size: 9px;
+    line-height: 100%;
+    margin-bottom: 0px;
+  }
+
+  .broadcast__link {
+    position: absolute;
+    font-size: 12px;
+    bottom: 9px;
+  }
+
+  .broadcast__link svg {
+    margin-left: 2px;
+  }
+
+  .broadcasts__archive {
+    bottom: 28px;
+    padding: 30px 34px 26px 10px;
+    max-width: 100%;
+  }
+
+  .archive__content {
+    display: flex;
+    flex-direction: column;
+    background-position: left center;
+    background-size: 77px;
+    min-height: 105px;
+    padding-left: 90px;
+  }
+
+  .archive__btn {
+    min-width: 110px;
+    align-self: flex-start; /* Запрещаем растягиваться на ширину родителя */
+    width: auto;
+    padding: 6px 29px 7px;
+    order: 1;
+    margin: 0;
+  }
+
+  .archive__descr {
+    font-size: 14px;
+    margin-bottom: 7px;
+  }
+
+  .guests__container {
+    padding-top: 55px;
+    padding-bottom: 46px;
+  }
+
+  .guests__title {
+    margin-bottom: 11px;
+  }
+
+  .guests__subtitle {
+    font-size: 14px;
+    margin-bottom: 0px;
+  }
+
+  .guests__descr {
+    font-size: 14px;
+    margin-bottom: 28px;
+  }
+
+  .guests__list {
+    gap: 21px;
+  }
+
+  .guests__card {
+    gap: 6px;
+  }
+
+  .guest__photo {
+    max-height: 159px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .guest__broadcast {
+    bottom: 9px;
+    padding: 6px 13px 6px;
+  }
+
+  .playlists__container {
+    padding-top: 55px;
+    padding-bottom: 54px;
+  }
+
+  .playlists__descr {
+    font-size: 12px;
+    line-height: 133%;
+    margin-bottom: 2px;
+  }
+
+  .playlists__copyright {
+    font-size: 12px;
+    margin-bottom: 9px;
+  }
+
+  .playlists__list {
+    margin-top: -1px;
+  }
+
+  .performer__link {
+    flex-direction: column;
+  }
+
+  .performer__country {
+    right: 0;
+    left: unset;
+  }
+
+  .performer__info {
+    padding-top: 10px;
+    padding-bottom: 7px;
+  }
+
+  .performer__name {
+    margin-bottom: 4px;
+  }
+
+  .subscription__container {
+    gap: 25px;
+    padding-bottom: 54px;
+  }
+
+  .subscription__ad {
+    padding-top: 0px;
+  }
+
+  .subscription__title {
+    margin-bottom: 22px;
+  }
+
+  .subscription__descr {
+    font-size: 14px;
+    line-height: 158%;
+    margin-bottom: 11px;
+  }
+
+  .subscription__descr p:not(:nth-last-child(1)) {
+    margin-bottom: 11px;
+  }
+
+  .subscription__price {
+    margin-bottom: 16px;
+    font-size: 24px;
+  }
+
+  .subscription__btn {
+    font-size: 16px;
+    padding: 15px 14px 13px;
+  }
+
+  .subscription__btn svg {
+    margin-top: -2px;
+  }
+
+  .about-us__container {
+    padding-top: 55px;
+    padding-bottom: 53px;
+  }
+
+  .about-us__contant {
+    background-image: unset;
+    margin-left: unset;
+    padding-left: unset;
+    padding-bottom: 0px;
+    margin-bottom: 29px;
+  }
+
+  .about-us__title {
+    margin-bottom: 11px;
+  }
+
+  .about-us__subtitle {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .about-us__descr {
+    font-size: 14px;
+    line-height: 157%;
+  }
+
+  .about-us__list {
+    row-gap: 29px;
+    margin-bottom: 29px;
+  }
+
+  .person__photo {
+    margin-bottom: 8px;
+  }
+
+  .person__name {
+    font-size: 14px;
+    line-height: 129%;
+    margin-bottom: 5px;
+  }
+
+  .person__phrase {
+    font-size: 12px;
+    line-height: 133%;
+  }
+
+  .form__inputs {
+    margin-bottom: 29px;
+  }
+
+  .form__input {
+    border: 1px solid var(--white);
+    font-size: 16px;
+  }
+
+  .form__textarea {
+    border-radius: 20px;
+    padding-top: 15px;
+    padding-left: 23px;
+  }
+
+  .form__personal-data {
+    border-radius: 40px;
+    min-height: 40px;
+    padding: 15px 15px 15px 23px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 23px;
+  }
+
+  .form__btn {
+    font-size: 16px;
+    padding: 16px 45px 15px;
+    margin-bottom: 24px;
+  }
+
+  .checkbox__box {
+    width: 11px;
+    height: 11px;
+    margin-top: -4px;
+    margin-left: -21px;
+  }
+
+  .checkbox__agreement {
+    font-size: 9px;
+    padding-top: 0px;
+  }
+
+  .footer {
+    background-position: center calc(100% - 75px);
+    min-height: 440px;
+  }
+
+  .footer__container {
+    padding-top: 54px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .footer__main {
+    margin-bottom: 52px;
+  }
+
+  .footer__info {
+    margin-bottom: 48px;
+  }
+
+  .footer__nav {
+    background: var(--black);
+    padding: 26px 32px 36px;
+    column-gap: 40px;
+  }
+
+  .footer__menu-link {
+    font-size: 12px;
+  }
+
+  .footer__menu {
+    row-gap: 18px;
+  }
+
+  .footer__copyright {
+    font-size: 12px;
+  }
 
 }

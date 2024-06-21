@@ -577,8 +577,8 @@ body {
 }
 
 .subscription__btn {
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center; */
   border: 2px solid var(--promo-color);
   font-size: 20px;
   line-height: 100%;
