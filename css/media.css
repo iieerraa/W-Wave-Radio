@@ -474,6 +474,10 @@
     padding-left: 16px;
   }
 
+  .podcast__img {
+    width: 100%;
+  }
+
   .podcast__time {
     margin-bottom: 5px;
   }
@@ -611,7 +615,7 @@
 
   .playlists__container {
     padding-top: 55px;
-    padding-bottom: 54px;
+    padding-bottom: 53px;
   }
 
   .playlists__descr {
@@ -626,11 +630,17 @@
   }
 
   .playlists__list {
+    row-gap: 29px;
     margin-top: -1px;
   }
 
   .performer__link {
     flex-direction: column;
+  }
+
+  .performer__photo {
+    max-width: unset;
+    width: 100%;
   }
 
   .performer__country {
@@ -652,6 +662,10 @@
     padding-bottom: 54px;
   }
 
+  .subscription__img-back {
+    width: 100%;
+  }
+
   .subscription__ad {
     padding-top: 0px;
   }
@@ -668,6 +682,10 @@
 
   .subscription__descr p:not(:nth-last-child(1)) {
     margin-bottom: 11px;
+  }
+
+  .subscription__descr::before {
+    background-image: url(../img/wave_02.svg);
   }
 
   .subscription__price {
@@ -717,6 +735,7 @@
   }
 
   .person__photo {
+    width: 100%;
     margin-bottom: 8px;
   }
 
